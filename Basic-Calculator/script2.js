@@ -6,16 +6,23 @@ var begRegex = /^[\+*\/0.]/g;
 var endRegex = /[\+*\/\-\(.]$/g;
 var ans = '';
 var memoryRecall = '';
+var on = false;
 var reset = false;
 // DONE eval() to get answers
-// store answers in memory
-// add/subtract to and/or from memory
-// recall current memory
+// DONE store answers in memory
+// DONE add/subtract to and/or from memory
+// DONE recall current memory
 // DONE clear the display
 // DONE disallow concatenating digits after equals has been clicked and answer displayed
-// convert digit to percent, square root, change sign, power on
+// DONE convert digit to percent, square root, change sign, power on
 // check for and clean display string for operators at beginning or end of string
 // ^[\+*\/0.] ... [\+*\/\-\(.]$
+buttons[4].addEventListener("click", keysOn);
+
+function keysOn() {
+    display.value = 'Hello...';
+    ans = display.value;
+    on = true;
 for (var i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener("click", function(event) {
             if (this.value === 'CLR') {
@@ -40,6 +47,22 @@ for (var i = 0; i < buttons.length; i += 1) {
                     memoryRecall -= '-' + display.value;
                     console.log('Memory minus: ' + memoryRecall);
                 }
+            } else if (this.value === '%') {
+                if ('%') {
+                    display.value = display.value / 100;
+                    ans = display.value;
+                }
+            } else if (this.value === 'sqrt') {
+                if ('sqrt') {
+                    display.value = Math.sqrt(display.value);
+                    ans = display.value;
+                }
+            } else if (this.value === 'sign') {
+                if (display.value.substring(0, 1) === '-') {
+                    display.value = display.value.substring(1, display.value.length);
+                } else {
+                    display.value = '-' + display.value;
+                }
             } else {
                 if (ans !== '' && display.value !== '') {
                     display.value = this.value;
@@ -47,8 +70,7 @@ for (var i = 0; i < buttons.length; i += 1) {
                 } else {
                     display.value += this.value;
                 }
-                
             }
     }, true);
 }
- 
+}

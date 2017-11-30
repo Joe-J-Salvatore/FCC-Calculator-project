@@ -14,6 +14,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         background-color: #DCD3B7;
+        box-shadow: -3px -6px 5px 2px rgb(255, 244, 215) inset;
         border-radius: 15px;
 }
 h4, h5, h6 {
@@ -21,23 +22,47 @@ h4, h5, h6 {
     margin: 0 0 0 18px;
 }
 #solar-panel {
-    width: 95%;
+    width: 90%;
     height: 60px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
     top: 10px;
-    background-color: #23232F;
-    /*solarr cell: #3C2D1F, solar logo: #612023*/
+    /*background-color: #23232F;*/
+    background: linear-gradient(to bottom, #23232F, rgb(64, 64, 83) );
+    /*solar cell: #3C2D1F, solar logo: #612023*/
+}
+#solar-cell {
+    width: 50%;
+    height: 55%;
+    background-color: rgb(71, 53, 37);
+    border: 1px inset rgb(64, 82, 82);
+    position: relative;
+    margin-left: 45%;
+    bottom: 90%;
+}
+tr {
+    font-size: 24px;
+}
+td {
+    display: inline;
+    padding: 4px 15px 2px 15px;
+}
+.visBorder {
+    margin-left: 4px;
+    border-right: 1px solid black;
 }
 #ridge {
-    width: 95%;
-    height: 60px;
+    width: 90%;
+    height: 70px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     top: 10px;
-    border: 0.5px solid gray;
+    box-shadow: 0.2px 0 2px rgb(167, 159, 137);
+    border-bottom: 0.5px outset rgba(196, 194, 194, 0.568);
     border-radius: 2px;
 }
 #inset {
@@ -46,20 +71,25 @@ h4, h5, h6 {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 4px;
-    border: 0.5px solid gray;
+    top: 6px;
+    border-right: 0.5px outset rgba(196, 194, 194, 0.568);
+    border-left: 0.5px ridge rgba(196, 194, 194, 0.568);
+    box-shadow: 0 0.2px 2px rgb(167, 159, 137);
     border-radius: 3px;
 }
 #screen input{
     width: 90%;
-    height: 20px;
+    height: 25px;
     position: relative;
     margin-left: 10px;
     margin-right: auto;
-    margin-top: 12px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    /*rgb(191, 209, 153*/
-    background-color: #463F2C;
+    background: linear-gradient(-5deg, rgb(151, 133, 91), #463F2C);
+    background: -webkit-linear-gradient(-5deg, rgb(151, 133, 91) #463F2C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-5deg, rgb(151, 133, 91) #463F2C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-5deg, rgb(151, 133, 91) #463F2C); /* For Firefox 3.6 to 15 */
+    /*background-color: #463F2C;*/
     border-radius: 3px;
     text-align: right;
 }
@@ -71,18 +101,25 @@ h4, h5, h6 {
 .button-top-row {
     width: 50px;
     height: 30px;
-    border: none;
+    border: 1px outset gray;
     border-radius: 6px;
     background-color: #666165;
-    color: white;
+    color: rgb(233, 233, 233);
+    box-shadow: 0 1px 3px 0.2px #666165;
+    font-weight: bold;
+    font-size: 1em;
+
 }
 .button-row {
     width: 50px;
     height: 45px;
-    border: none;
+    border: 2.2px groove gray;
     border-radius: 8px;
     background-color: #666165;
-    color: white;
+    color: rgb(233, 233, 233);
+    box-shadow: 0 1px 3px 0.2px #666165;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 #em-minus, #em-plus {
     margin-left: 55px;

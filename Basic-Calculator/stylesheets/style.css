@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('../fonts/DS-Digital.css/DS-Digital.ttf.woff') format('woff'),
+         url('../fonts/DS-Digital.css/DS-Digital.ttf.svg#DS-Digital') format('svg'),
+         url('../fonts/DS-Digital.css/DS-Digital.ttf.eot'),
+         url('../fonts/DS-Digital.css/DS-Digital.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background: black;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#calculator {
+        height: 500px;
+        width: 325px;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #DCD3B7;
+        box-shadow: -3px -6px 5px 2px rgb(255, 244, 215) inset;
+        border-radius: 15px;
+}
+#solar-panel img{
+    width: 20%;
+    height: auto;
+    margin-left: 18px;
+}
+#solar-panel h5, h6 {
+    color: rgb(190, 190, 190);
+    margin: 0 0 0 18px;
+}
+#solar-panel h5 {
+    font-family: 'Krona One';
+    font-size: 0.8em;
+    font-weight: 200;
+}
+#solar-panel h6 {
+    font-family: 'Krona One';
+    font-size: 0.6em;
+    font-weight: 200;
+}
+#solar-panel {
+    width: 90%;
+    height: 60px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 10px;
+    /*background-color: #23232F;*/
+    background: linear-gradient(to bottom, #23232F, rgb(64, 64, 83) );
+    /*solar cell: #3C2D1F, solar logo: #612023*/
+}
+#solar-cell {
+    width: 50%;
+    height: 55%;
+    background-color: rgb(71, 53, 37);
+    border: 1px inset rgb(64, 82, 82);
+    position: relative;
+    margin-left: 45%;
+    bottom: 90%;
+}
+tr {
+    font-size: 24px;
+}
+td {
+    display: inline;
+    padding: 4px 15px 2px 18px;
+}
+.visBorder {
+    margin-left: 4px;
+    border-right: 1px solid black;
+}
+#red-logo {
+    margin-top: 8.5px;
+    margin-left: 50px;
+    color: darkred;
+}
+#ridge {
+    width: 90%;
+    height: 70px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+    box-shadow: 0.2px 0 2px rgb(167, 159, 137);
+    border-bottom: 0.5px outset rgba(196, 194, 194, 0.568);
+    border-radius: 2px;
+}
+#inset {
+    width: 85%;
+    height: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 6px;
+    border-right: 0.5px outset rgba(196, 194, 194, 0.568);
+    border-left: 0.5px ridge rgba(196, 194, 194, 0.568);
+    box-shadow: 0 0.2px 2px rgb(167, 159, 137);
+    border-radius: 3px;
+}
+#screen input{
+    width: 90%;
+    height: 25px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background: linear-gradient(-5deg, rgb(151, 133, 91), #463F2C);
+    background: -webkit-linear-gradient(-5deg, rgb(151, 133, 91) #463F2C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-5deg, rgb(151, 133, 91) #463F2C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-5deg, rgb(151, 133, 91) #463F2C); /* For Firefox 3.6 to 15 */
+    /*background-color: #463F2C;*/
+    border-radius: 3px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+#keys {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 16px;
+}
+.button-top-row {
+    width: 55px;
+    height: 30px;
+    /*border: 2.2px groove gray;*/
+    border-top: 1.2px solid #414141;
+    border-bottom: 1.2px solid #414141;
+    border-right: 2px solid #414141;
+    border-left: 2px solid #414141;
+    border-radius: 6px;
+    background-color: #666165;
+    color: rgb(233, 233, 233);
+    box-shadow: 0 1px 3px 0.2px #666165, inset 1px 1px 5px #969696;
+    outline: none;
+    text-align: center;
+    font-family: 'Helvetica';
+    font-size: 1em;
+    font-weight: 500;
+}
+.button-row {
+    width: 55px;
+    height: 45px;
+    /*border: 2.2px groove gray;*/
+    border-top: 1.2px solid #414141;
+    border-bottom: 1.2px solid #414141;
+    border-right: 2px solid #414141;
+    border-left: 2px solid #414141;
+    border-radius: 8px;
+    background-color: #666165;
+    color: rgb(233, 233, 233);
+    box-shadow: 0 1px 3px 0.2px #666165, inset 1px 1px 5px #969696;
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+    outline: none;
+    font-family: 'Helvetica';
+    font-size: 1.5em;
+    font-weight: 500;
+}
+#em-minus, #em-plus {
+    margin-left: 60px;
+}
+#plus {
+    position: absolute;
+    margin-top: -60px;
+    height: 105px;
+}
+button:hover {
+    background-color: #4d4a4d;
+}
+button:active {
+    background-color: #4d4a4d;
+    box-shadow: 0 0.2px 1px 0.2px #494548;
+    transform: translateY(1px);
+}

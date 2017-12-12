@@ -85,8 +85,10 @@ function keysOn(value) {
             } else {
                 display.value = '0';
             }
-        } else {
+        } else if (display.value.length < 20) {
             display.value += value;
+        } else {
+            display.value = display.value;
         }
     }
 }

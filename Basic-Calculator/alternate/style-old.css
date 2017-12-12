@@ -17,9 +17,12 @@ body {
         box-shadow: -3px -6px 5px 2px rgb(255, 244, 215) inset;
         border-radius: 15px;
 }
-h4, h5, h6 {
+#solar-panel h4, h5, h6 {
     color: rgb(190, 190, 190);
     margin: 0 0 0 18px;
+}
+#solar-panel h6 {
+    font-family: 'DS-Digital';
 }
 #solar-panel {
     width: 90%;
@@ -53,6 +56,11 @@ td {
 .visBorder {
     margin-left: 4px;
     border-right: 1px solid black;
+}
+#red-logo {
+    margin-top: 8.5px;
+    margin-left: 55px;
+    color: darkred;
 }
 #ridge {
     width: 90%;
@@ -93,6 +101,10 @@ td {
     border-radius: 3px;
     text-align: right;
 }
+input {
+    font-family: monospace;
+    font-size: 1.5em;
+}
 #keys {
     position: absolute;
     margin-top: 30px;
@@ -106,7 +118,10 @@ td {
     background-color: #666165;
     color: rgb(233, 233, 233);
     box-shadow: 0 1px 3px 0.2px #666165;
-    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 
 }
@@ -118,7 +133,7 @@ td {
     background-color: #666165;
     color: rgb(233, 233, 233);
     box-shadow: 0 1px 3px 0.2px #666165;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
 }
 #em-minus, #em-plus {

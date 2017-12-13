@@ -15,8 +15,8 @@ body {
         margin-right: auto;
         /*background-color: #DCD3B7;*/
         background: linear-gradient(to bottom left, #DCD3B7, rgb(202, 194, 170));
-        box-shadow: inset -3px -2px 5px 2px rgb(255, 244, 215), inset 1px 1px 5px 2px 
-        rgb(238, 229, 208), -2px 6px 20px 1px rgba(0,0,0,0.4);
+        box-shadow: inset -1px -1px 5px 2px rgb(255, 244, 215), inset 1px 1px 5px 2px 
+        rgb(235, 225, 204), -2px 6px 20px 1px rgba(0,0,0,0.4);
         border-radius: 15px;
 }
 #solar-panel img{
@@ -83,7 +83,8 @@ td {
     margin-left: auto;
     margin-right: auto;
     top: 10px;
-    box-shadow: 0.2px 0 2px rgb(167, 159, 137);
+    /*box-shadow: 0.2px 0 2px rgb(167, 159, 137);*/
+    box-shadow: 0.6px 0 4px rgb(167, 159, 137);
     border-bottom: 0.5px outset rgba(196, 194, 194, 0.568);
     border-radius: 2px;
 }
